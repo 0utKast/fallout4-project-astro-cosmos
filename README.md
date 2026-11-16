@@ -12,6 +12,7 @@
 
 > **🌍 Language Navigation & Direct Downloads / Navegación y Descarga Directa:**
 > - 🎬 **[Watch Official Trailer on YouTube / Ver Tráiler Oficial en YouTube (`youtu.be/uGDSPndAUIA`)](https://youtu.be/uGDSPndAUIA)**
+> - 🎓 **[Full 90-Min Modding Engineering Course — How This Mod Was Built (YouTube 4K EN)](https://youtu.be/a358U4HAPYs)** · **[ES (`01:49:45`)](https://www.youtube.com/watch?v=_qSFQ8TPaao)** · **[14 Interactive Web Labs](https://0utkast.github.io/fallout-modding-course/)**
 > - 📦 **[Download Complete Playable `.zip` Releases (`v1.0.0` — EN & ES)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**
 >   - 🇺🇸 `ProjectAstroCosmos_EN_v1.0.0.zip` *(146.54 MB — 100% Pure English Standalone Edition for Vortex / MO2 / Manual)*
 >   - 🇪🇸 `ProyectoAstroCosmos_ES_v1.0.0.zip` *(157.63 MB — Edición 100% en Español para Vortex / MO2 / Manual)*
