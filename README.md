@@ -2,6 +2,7 @@
 ### *Fly Over the Commonwealth (The Hubris Legacy)* — True 3D Superhero Free Flight (`8` Regimes, `714` Havok `.hkx`), Custom 3D PBR Suits & Airborne Arsenal, and *Underground Studio Orbit-7* Voiced Campaign (English & Spanish Standalone Editions)
 
 [![License: MIT & Open Permissions](https://img.shields.io/badge/License-MIT%20%28100%25%20Open%20Permissions%29-brightgreen.svg)](LICENSE)
+[![Nexus Mods #111507](https://img.shields.io/badge/Nexus%20Mods-%23111507%20%28EN%20%26%20ES%29-da8e35.svg)](https://www.nexusmods.com/fallout4/mods/111507)
 [![Official Trailer](https://img.shields.io/badge/YouTube-Official%20Trailer-ff0000.svg)](https://youtu.be/uGDSPndAUIA)
 [![Release v1.0.0](https://img.shields.io/badge/Release-v1.0.0%20Complete%20%28EN%20%26%20ES%29-success.svg)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)
 [![Fallout 4 Compatibility](https://img.shields.io/badge/Fallout%204-1.10.163%20%2B%20Next--Gen%2FAE%20%28HEDR%201.00%20%2F%20BA2%20v1%29-blue.svg)](#universal-compatibility)
@@ -12,8 +13,8 @@
 
 > **🌍 Language Navigation & Direct Downloads / Navegación y Descarga Directa:**
 > - 🎬 **[Watch Official Trailer on YouTube / Ver Tráiler Oficial en YouTube (`youtu.be/uGDSPndAUIA`)](https://youtu.be/uGDSPndAUIA)**
-> - 🎓 **[Full 90-Min Modding Engineering Course — How This Mod Was Built (YouTube 4K EN)](https://youtu.be/a358U4HAPYs)** · **[ES (`01:49:45`)](https://www.youtube.com/watch?v=_qSFQ8TPaao)** · **[14 Interactive Web Labs](https://0utkast.github.io/fallout-modding-course/)**
-> - 📦 **[Download Complete Playable `.zip` Releases (`v1.0.0` — EN & ES)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**
+> - 🎓 **[Full 90-Min Modding Engineering Course — How This Mod Was Built (YouTube 4K EN)](https://youtu.be/a358U4HAPYs)** · **[ES (`01:49:45`)](https://www.youtube.com/watch?v=_qSFQ8TPaao)** · **[14 Interactive Web Labs](https://0utkast.github.io/fallout-modding-course/)** · **[Nexus Mods Course #111508](https://www.nexusmods.com/fallout4/mods/111508)**
+> - 📦 **[Download on Nexus Mods (`#111507` — Vortex / MO2 / Manual)](https://www.nexusmods.com/fallout4/mods/111507)** · **[GitHub Releases (`v1.0.0` — EN & ES)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**
 >   - 🇺🇸 `ProjectAstroCosmos_EN_v1.0.0.zip` *(146.54 MB — 100% Pure English Standalone Edition for Vortex / MO2 / Manual)*
 >   - 🇪🇸 `ProyectoAstroCosmos_ES_v1.0.0.zip` *(157.63 MB — Edición 100% en Español para Vortex / MO2 / Manual)*
 > - 🇺🇸 **[English Documentation (Flight Engine, Arsenal, Orbit-7 Quest & Installation)](#english-documentation)**
@@ -81,7 +82,7 @@ Discover the **secret hatch outside Hubris Comics** in downtown Boston to unlock
 ---
 
 ## 6. Installation & Getting Started
-1. **Download your standalone edition** from **[GitHub Releases (`v1.0.0`)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**:
+1. **Download your standalone edition** from **[Nexus Mods (`#111507`)](https://www.nexusmods.com/fallout4/mods/111507)** or **[GitHub Releases (`v1.0.0`)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**:
    - English Edition: `ProjectAstroCosmos_EN_v1.0.0.zip` (`146.54 MB`)
    - Spanish Edition: `ProyectoAstroCosmos_ES_v1.0.0.zip` (`157.63 MB`)
 2. **Install via Vortex or Mod Organizer 2** (recommended), or extract `AeroArmorMod.esp`, `AeroArmorMod - Main.ba2`, and `AeroArmorMod - Textures.ba2` into your `Fallout 4\Data` directory and enable `AeroArmorMod.esp`.
@@ -148,6 +149,6 @@ Encuentra la escotilla secreta frente a **Hubris Comics** en el centro de Boston
 ---
 
 ## 3. Instalación Rápida (Español)
-1. Descarga **`ProyectoAstroCosmos_ES_v1.0.0.zip`** (`157.63 MB`) desde **[GitHub Releases](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**.
+1. Descarga **`ProyectoAstroCosmos_ES_v1.0.0.zip`** (`157.63 MB`) desde **[Nexus Mods (`#111507`)](https://www.nexusmods.com/fallout4/mods/111507)** o **[GitHub Releases](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**.
 2. Instálalo con **Vortex** o **Mod Organizer 2** (o copia `AeroArmorMod.esp`, `AeroArmorMod - Main.ba2` y `AeroArmorMod - Textures.ba2` en `Fallout 4\Data`) y activa `AeroArmorMod.esp`.
 3. Acércate a la entrada principal de **Hubris Comics** en Boston y entra por la **escotilla secreta del Estudio Subterráneo Órbita-7**.
