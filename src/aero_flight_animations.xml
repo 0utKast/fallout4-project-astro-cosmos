@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ==============================================================================
+  AERO ARMOR MOD - DEFINICIÓN XML DE ANIMACIONES DE VUELO Y DESCENSO (FO4 HKX)
+  ==============================================================================
+  Este archivo XML define las poses óseas 3D (calculadas por cinemática directa
+  sobre `Meshes\Actors\Character\CharacterAssets\skeleton.hkx`), ángulos de
+  inclinación aerodinámica, oscilación de flotación y archivos .hkx de destino
+  para el generador Python (`build_aero_animations.py`).
+
+  Perfiles de vuelo incluidos:
+    1. FlightHover         -> Levitación estacionaria / Ascenso (8° inclinación, COM Z=76.5)
+    2. FlightForwardWalk   -> Planeo de avance suave (45° inclinación horizontal, COM Z=81.5)
+    3. FlightForwardRun    -> Vuelo de crucero / propulsión (58° inclinación horizontal, COM Z=84.5)
+    4. FlightForwardSprint -> Vuelo supersónico (70° inclinación horizontal, COM Z=86.5)
+    5. FlightDescend       -> Descenso aéreo controlado (4° inclinación, COM Z=75.5)
+-->
+<AeroFlightAnimations version="3.0" format="hk_2014.1.0-r1">
+
+  <!-- ===================================================================== -->
+  <!-- 1. VUELO ESTACIONARIO / LEVITACIÓN (FLIGHT HOVER)                     -->
+  <!-- Postura suspendida en el aire: cuerpo erguido con ligera inclinación  -->
+  <!-- de 8°, rodilla derecha más flexionada estilo propulsor, punteras      -->
+  <!-- hacia abajo y brazos estabilizadores abiertos ~20° a los costados.    -->
+  <!-- ===================================================================== -->
+  <AnimationProfile id="FlightHover"
+                    archetypeFolder="AeroFlight"
+                    stripFootstepSounds="true"
+                    comElevationZ_Human="76.5"
+                    comElevationZ_PA="103.5"
+                    comBobAmplitudeZ="0.9"
+                    poseOscillationDeg="2.0">
+    <TargetFiles>
+      <File name="PoseA_Idle1.hkx" />
+      <File name="PoseA_IdleFlavor2.hkx" />
+      <File name="Idle.hkx" powerArmorOnly="true" />
+      <File name="ThrustStart.hkx" powerArmorOnly="true" />
+      <File name="ThrustIdle.hkx" powerArmorOnly="true" />
+      <File name="UpwardDrift.hkx" powerArmorOnly="true" />
+      <File name="JumpInPlace.hkx" />
+      <File name="JumpInPlaceFall.hkx" />
+      <File name="JumpInPlaceLand.hkx" />
+      <File name="TurnInPlaceLeft45.hkx" />
+      <File name="TurnInPlaceLeft90.hkx" />
+      <File name="TurnInPlaceLeft180.hkx" />
+      <File name="TurnInPlaceRight45.hkx" />
+      <File name="TurnInPlaceRight90.hkx" />
+      <File name="TurnInPlaceRight180.hkx" />
+      <File name="TurnInPlaceLeft45_Fast.hkx" />
+      <File name="TurnInPlaceLeft90_Fast.hkx" />
+      <File name="TurnInPlaceLeft180_Fast.hkx" />
+      <File name="TurnInPlaceRight45_Fast.hkx" />
+      <File name="TurnInPlaceRight90_Fast.hkx" />
+      <File name="TurnInPlaceRight180_Fast.hkx" />
+      <File name="WPNIdleReady.hkx" legsOnly="true" />
+      <File name="WPNJumpInPlace.hkx" legsOnly="true" />
+      <File name="WPNJumpInPlaceFall.hkx" legsOnly="true" />
+      <File name="WPNJumpInPlaceLand.hkx" legsOnly="true" />
+    </TargetFiles>
+    <BoneOverrides>
+      <Bone index="1"  name="COM"              qx="-0.0493" qy="-0.7054" qz="0.0493"  qw="0.7054" />
+      <Bone index="3"  name="LLeg_Thigh"       qx="0.0419"  qy="0.9862"  qz="0.1421"  qw="-0.0734" osc_rz_deg="1.5" />
+      <Bone index="4"  name="LLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1564" qw="0.9877"  osc_rz_deg="2.5" />
+      <Bone index="5"  name="LLeg_Foot"        qx="0.0000"  qy="-0.0500" qz="0.2200"  qw="0.9742"  />
+      <Bone index="6"  name="RLeg_Thigh"       qx="0.1144"  qy="0.9809"  qz="-0.1379" qw="0.0759"  osc_rz_deg="-1.5" />
+      <Bone index="7"  name="RLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.2250" qw="0.9744"  osc_rz_deg="-2.5" />
+      <Bone index="8"  name="RLeg_Foot"        qx="0.0000"  qy="0.0500"  qz="0.2200"  qw="0.9742"  />
+      <Bone index="9"  name="Spine1"           qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"           qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="11" name="Chest"            qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="12" name="Neck"             qx="0.0000"  qy="0.0000"  qz="0.0349"  qw="0.9994"  />
+      <Bone index="13" name="Head"             qx="0.0000"  qy="0.0000"  qz="-0.1219" qw="0.9925"  />
+      <Bone index="14" name="LArm_Collarbone"  qx="-0.1078" qy="0.8364"  qz="0.1402"  qw="-0.5188" />
+      <Bone index="15" name="LArm_UpperArm"    qx="0.0941"  qy="-0.3607" qz="0.0953"  qw="0.9229"  osc_rz_deg="2.0" />
+      <Bone index="16" name="LArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.1045"  qw="0.9945"  />
+      <Bone index="17" name="LArm_ForeArm2"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="18" name="LArm_ForeArm3"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="19" name="LArm_Hand"        qx="-0.7032" qy="-0.0665" qz="-0.0369" qw="0.7069"  />
+      <Bone index="20" name="RArm_Collarbone"  qx="-0.0501" qy="0.8460"  qz="-0.1022" qw="0.5209"  />
+      <Bone index="21" name="RArm_UpperArm"    qx="-0.1337" qy="0.3656"  qz="0.0679"  qw="0.9186"  osc_rz_deg="-2.0" />
+      <Bone index="22" name="RArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.1045"  qw="0.9945"  />
+      <Bone index="23" name="RArm_ForeArm2"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="24" name="RArm_ForeArm3"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="26" name="RArm_Hand"        qx="0.7032"  qy="0.0665"  qz="-0.0369" qw="0.7069"  />
+      <Bone index="42" name="LArm_UpperTwist1" qx="-0.0143" qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="43" name="LArm_UpperTwist2" qx="0.0071"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="44" name="RArm_UpperTwist1" qx="0.0143"  qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="45" name="RArm_UpperTwist2" qx="-0.0072" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+    </BoneOverrides>
+    <PowerArmorBoneOverrides>
+      <Bone index="1"  name="COM"             qx="-0.0493" qy="-0.7054" qz="0.0493"  qw="0.7054" />
+      <Bone index="3"  name="LLeg_Thigh"      qx="0.0594"  qy="0.6961"  qz="0.7154"  qw="-0.0121" osc_rz_deg="1.5" />
+      <Bone index="4"  name="LLeg_Calf"       qx="0.0010"  qy="0.2450"  qz="0.0035"  qw="0.9695"  osc_ry_deg="2.5" />
+      <Bone index="5"  name="LLeg_Foot"       qx="0.6304"  qy="-0.1257" qz="0.1002"  qw="0.7594"  />
+      <Bone index="6"  name="RLeg_Thigh"      qx="0.1088"  qy="0.7165"  qz="-0.6885" qw="-0.0283" osc_rz_deg="-1.5" />
+      <Bone index="7"  name="RLeg_Calf"       qx="-0.0017" qy="-0.3100" qz="0.0028"  qw="0.9507"  osc_ry_deg="-2.5" />
+      <Bone index="8"  name="RLeg_Foot"       qx="-0.6259" qy="0.0777"  qz="0.0487"  qw="0.7745"  />
+      <Bone index="9"  name="Spine1"          qx="0.0021"  qy="-0.0073" qz="0.0245"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"          qx="-0.0242" qy="0.0024"  qz="0.0497"  qw="0.9985"  />
+      <Bone index="11" name="Chest"           qx="0.0180"  qy="-0.0083" qz="0.0497"  qw="0.9986"  />
+      <Bone index="12" name="Neck"            qx="0.0380"  qy="-0.0086" qz="0.0500"  qw="0.9980"  />
+      <Bone index="13" name="Head"            qx="-0.0225" qy="0.0083"  qz="-0.2200" qw="0.9752"  />
+      <Bone index="15" name="LArm_UpperArm"   qx="0.1793"  qy="-0.3226" qz="0.0131"  qw="0.9293"  osc_rz_deg="2.0" />
+      <Bone index="16" name="LArm_ForeArm1"   qx="0.0045"  qy="-0.0449" qz="0.2200"  qw="0.9744"  />
+      <Bone index="21" name="RArm_UpperArm"   qx="-0.1126" qy="0.3333"  qz="0.0010"  qw="0.9361"  osc_rz_deg="-2.0" />
+      <Bone index="22" name="RArm_ForeArm1"   qx="-0.0028" qy="0.0463"  qz="0.2000"  qw="0.9787"  />
+    </PowerArmorBoneOverrides>
+  </AnimationProfile>
+
+  <!-- ===================================================================== -->
+  <!-- 2. PLANEO DE AVANCE / VUELO MODERADO (FLIGHT FORWARD WALK)            -->
+  <!-- Cuerpo inclinado 45° hacia adelante alrededor del pecho (COM Z=81.5), -->
+  <!-- mirada al frente, brazos barridos hacia atrás junto al torso con      -->
+  <!-- muñecas rectas y piernas extendidas en estela.                        -->
+  <!-- ===================================================================== -->
+  <AnimationProfile id="FlightForwardWalk"
+                    archetypeFolder="AeroFlight"
+                    stripFootstepSounds="true"
+                    comElevationZ_Human="81.5"
+                    comElevationZ_PA="108.5"
+                    comBobAmplitudeZ="0.0"
+                    poseOscillationDeg="0.0">
+    <TargetFiles>
+      <File name="WalkForward.hkx" />
+      <File name="WalkLeanLeft.hkx" />
+      <File name="WalkLeanRight.hkx" />
+      <File name="JumpWalk.hkx" />
+      <File name="JumpWalkFall.hkx" />
+      <File name="JumpWalkLand.hkx" />
+      <File name="Stand_to_Walk.hkx" />
+      <File name="Stand_to_Walk_L30.hkx" />
+      <File name="Stand_to_Walk_R30.hkx" />
+      <File name="Stand_to_Walk_L90.hkx" />
+      <File name="Stand_to_Walk_R90.hkx" />
+      <File name="Stand_to_Walk_L180.hkx" />
+      <File name="Stand_To_Walk_R180.hkx" />
+      <File name="Walk_to_Stand.hkx" />
+      <File name="Walk_to_Stand_R.hkx" />
+      <File name="Walk_to_Stand_L45.hkx" />
+      <File name="Walk_to_Stand_R45.hkx" />
+      <File name="Walk_to_Stand_L90.hkx" />
+      <File name="Walk_to_Stand_R90.hkx" />
+      <File name="Walk_to_Stand_L180.hkx" />
+      <File name="Walk_to_Stand_R180.hkx" />
+      <File name="Walk_to_Walk_L180.hkx" />
+      <File name="Walk_to_Walk_R180.hkx" />
+      <File name="WPNWalkForwardReady.hkx" legsOnly="true" />
+      <File name="WPNWalkForwardRelaxed.hkx" legsOnly="true" />
+      <File name="WPNWalkLeftReady.hkx" legsOnly="true" />
+      <File name="WPNWalkRightReady.hkx" legsOnly="true" />
+      <File name="WPNWalkBackwardReady.hkx" legsOnly="true" />
+    </TargetFiles>
+    <BoneOverrides>
+      <Bone index="1"  name="COM"              qx="-0.2706" qy="-0.6533" qz="0.2706"  qw="0.6533" />
+      <Bone index="3"  name="LLeg_Thigh"       qx="-0.0356" qy="0.9865"  qz="0.1475"  qw="-0.0621" />
+      <Bone index="4"  name="LLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1305" qw="0.9914"  />
+      <Bone index="5"  name="LLeg_Foot"        qx="0.0000"  qy="-0.0500" qz="0.2200"  qw="0.9742"  />
+      <Bone index="6"  name="RLeg_Thigh"       qx="0.0457"  qy="0.9865"  qz="-0.1429" qw="0.0661"  />
+      <Bone index="7"  name="RLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1908" qw="0.9816"  />
+      <Bone index="8"  name="RLeg_Foot"        qx="0.0000"  qy="0.0500"  qz="0.2200"  qw="0.9742"  />
+      <Bone index="9"  name="Spine1"           qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"           qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="11" name="Chest"            qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="12" name="Neck"             qx="0.0000"  qy="0.0000"  qz="-0.0872" qw="0.9962"  />
+      <Bone index="13" name="Head"             qx="0.0000"  qy="0.0000"  qz="-0.2756" qw="0.9613"  />
+      <Bone index="14" name="LArm_Collarbone"  qx="-0.1078" qy="0.8364"  qz="0.1402"  qw="-0.5188" />
+      <Bone index="15" name="LArm_UpperArm"    qx="0.1272"  qy="-0.3362" qz="0.0370"  qw="0.9324"  />
+      <Bone index="16" name="LArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.0523"  qw="0.9986"  />
+      <Bone index="17" name="LArm_ForeArm2"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="18" name="LArm_ForeArm3"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="19" name="LArm_Hand"        qx="-0.7032" qy="-0.0665" qz="-0.0369" qw="0.7069"  />
+      <Bone index="20" name="RArm_Collarbone"  qx="-0.0501" qy="0.8460"  qz="-0.1022" qw="0.5209"  />
+      <Bone index="21" name="RArm_UpperArm"    qx="-0.1674" qy="0.3387"  qz="0.0107"  qw="0.9258"  />
+      <Bone index="22" name="RArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.0523"  qw="0.9986"  />
+      <Bone index="23" name="RArm_ForeArm2"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="24" name="RArm_ForeArm3"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="26" name="RArm_Hand"        qx="0.7032"  qy="0.0665"  qz="-0.0369" qw="0.7069"  />
+      <Bone index="42" name="LArm_UpperTwist1" qx="-0.0143" qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="43" name="LArm_UpperTwist2" qx="0.0071"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="44" name="RArm_UpperTwist1" qx="0.0143"  qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="45" name="RArm_UpperTwist2" qx="-0.0072" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+    </BoneOverrides>
+    <PowerArmorBoneOverrides>
+      <Bone index="1"  name="COM"             qx="-0.2706" qy="-0.6533" qz="0.2706"  qw="0.6533" />
+      <Bone index="3"  name="LLeg_Thigh"      qx="0.0594"  qy="0.6961"  qz="0.7154"  qw="-0.0121" />
+      <Bone index="4"  name="LLeg_Calf"       qx="0.0010"  qy="0.1650"  qz="0.0035"  qw="0.9863"  />
+      <Bone index="5"  name="LLeg_Foot"       qx="0.6304"  qy="-0.1257" qz="0.1002"  qw="0.7594"  />
+      <Bone index="6"  name="RLeg_Thigh"      qx="0.1088"  qy="0.7165"  qz="-0.6885" qw="-0.0283" />
+      <Bone index="7"  name="RLeg_Calf"       qx="-0.0017" qy="-0.2150" qz="0.0028"  qw="0.9766"  />
+      <Bone index="8"  name="RLeg_Foot"       qx="-0.6259" qy="0.0777"  qz="0.0487"  qw="0.7745"  />
+      <Bone index="9"  name="Spine1"          qx="0.0021"  qy="-0.0073" qz="0.0245"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"          qx="-0.0242" qy="0.0024"  qz="0.0250"  qw="0.9994"  />
+      <Bone index="11" name="Chest"           qx="0.0180"  qy="-0.0083" qz="0.0250"  qw="0.9995"  />
+      <Bone index="12" name="Neck"            qx="0.0380"  qy="-0.0086" qz="-0.0850" qw="0.9956"  />
+      <Bone index="13" name="Head"            qx="-0.0225" qy="0.0083"  qz="-0.3200" qw="0.9471"  />
+      <Bone index="15" name="LArm_UpperArm"   qx="0.1793"  qy="-0.3226" qz="-0.0450" qw="0.9283"  />
+      <Bone index="16" name="LArm_ForeArm1"   qx="0.0045"  qy="-0.0449" qz="0.0850"  qw="0.9954"  />
+      <Bone index="21" name="RArm_UpperArm"   qx="-0.1126" qy="0.3333"  qz="-0.0450" qw="0.9350"  />
+      <Bone index="22" name="RArm_ForeArm1"   qx="-0.0028" qy="0.0463"  qz="0.0850"  qw="0.9953"  />
+    </PowerArmorBoneOverrides>
+  </AnimationProfile>
+
+  <!-- ===================================================================== -->
+  <!-- 3. VUELO DE CRUCERO / PROPULSIÓN (FLIGHT FORWARD RUN / JOG)           -->
+  <!-- Cuerpo tumbado 58° hacia adelante (con ligero arco de espalda = 65°), -->
+  <!-- pivote de altura compensado (COM Z=84.5) para eliminar cualquier      -->
+  <!-- caída al iniciar el avance, cabeza erguida mirando al frente y        -->
+  <!-- brazos estilizados barridos hacia atrás a lo largo del torso.         -->
+  <!-- ===================================================================== -->
+  <AnimationProfile id="FlightForwardRun"
+                    archetypeFolder="AeroFlight"
+                    stripFootstepSounds="true"
+                    comElevationZ_Human="84.5"
+                    comElevationZ_PA="111.5"
+                    comBobAmplitudeZ="0.0"
+                    poseOscillationDeg="0.0">
+    <TargetFiles>
+      <File name="JogForward.hkx" />
+      <File name="JogLeanLeft.hkx" />
+      <File name="JogLeanRight.hkx" />
+      <File name="RunForward.hkx" />
+      <File name="RunLeanLeft.hkx" />
+      <File name="RunLeanRight.hkx" />
+      <File name="JumpRun.hkx" />
+      <File name="JumpRunFall.hkx" />
+      <File name="JumpRunLand.hkx" />
+      <File name="JumpImpactLand.hkx" />
+      <File name="JumpRunImpactLand.hkx" />
+      <File name="Stand_to_Run.hkx" />
+      <File name="Stand_to_Run_L30.hkx" />
+      <File name="Stand_to_Run_R30.hkx" />
+      <File name="Stand_to_Run_L90.hkx" />
+      <File name="Stand_to_Run_R90.hkx" />
+      <File name="Stand_to_Run_L180.hkx" />
+      <File name="Stand_to_Run_R180.hkx" />
+      <File name="Run_to_Stand.hkx" />
+      <File name="Run_to_Run_L180.hkx" />
+      <File name="Run_to_Run_R180.hkx" />
+      <File name="WPNRunForwardReady.hkx" legsOnly="true" />
+      <File name="WPNRunForwardRelaxed.hkx" legsOnly="true" />
+      <File name="WPNRunLeftReady.hkx" legsOnly="true" />
+      <File name="WPNRunRightReady.hkx" legsOnly="true" />
+      <File name="WPNRunBackpedalReady.hkx" legsOnly="true" />
+      <File name="WPNJumpRun.hkx" legsOnly="true" />
+      <File name="WPNJumpRunFall.hkx" legsOnly="true" />
+      <File name="WPNJumpRunLand.hkx" legsOnly="true" />
+      <File name="WPNJumpImpactLand.hkx" legsOnly="true" />
+      <File name="WPNJumpRunImpactLand.hkx" legsOnly="true" />
+    </TargetFiles>
+    <BoneOverrides>
+      <Bone index="1"  name="COM"              qx="-0.3428" qy="-0.6184" qz="0.3428"  qw="0.6184" />
+      <Bone index="3"  name="LLeg_Thigh"       qx="-0.0529" qy="0.9857"  qz="0.1485"  qw="-0.0595" />
+      <Bone index="4"  name="LLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1132" qw="0.9936"  />
+      <Bone index="5"  name="LLeg_Foot"        qx="0.0000"  qy="-0.0500" qz="0.2200"  qw="0.9742"  />
+      <Bone index="6"  name="RLeg_Thigh"       qx="0.0284"  qy="0.9871"  qz="-0.1440" qw="0.0636"  />
+      <Bone index="7"  name="RLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1650" qw="0.9863"  />
+      <Bone index="8"  name="RLeg_Foot"        qx="0.0000"  qy="0.0500"  qz="0.2200"  qw="0.9742"  />
+      <Bone index="9"  name="Spine1"           qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"           qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="11" name="Chest"            qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="12" name="Neck"             qx="0.0000"  qy="0.0000"  qz="-0.1305" qw="0.9914"  />
+      <Bone index="13" name="Head"             qx="0.0000"  qy="0.0000"  qz="-0.3420" qw="0.9397"  />
+      <Bone index="14" name="LArm_Collarbone"  qx="-0.1078" qy="0.8364"  qz="0.1402"  qw="-0.5188" />
+      <Bone index="15" name="LArm_UpperArm"    qx="0.1443"  qy="-0.3314" qz="0.0070"  qw="0.9323"  />
+      <Bone index="16" name="LArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.0349"  qw="0.9994"  />
+      <Bone index="17" name="LArm_ForeArm2"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="18" name="LArm_ForeArm3"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="19" name="LArm_Hand"        qx="-0.7032" qy="-0.0665" qz="-0.0369" qw="0.7069"  />
+      <Bone index="20" name="RArm_Collarbone"  qx="-0.0501" qy="0.8460"  qz="-0.1022" qw="0.5209"  />
+      <Bone index="21" name="RArm_UpperArm"    qx="-0.1845" qy="0.3327"  qz="-0.0191" qw="0.9246"  />
+      <Bone index="22" name="RArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.0349"  qw="0.9994"  />
+      <Bone index="23" name="RArm_ForeArm2"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="24" name="RArm_ForeArm3"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="26" name="RArm_Hand"        qx="0.7032"  qy="0.0665"  qz="-0.0369" qw="0.7069"  />
+      <Bone index="42" name="LArm_UpperTwist1" qx="-0.0143" qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="43" name="LArm_UpperTwist2" qx="0.0071"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="44" name="RArm_UpperTwist1" qx="0.0143"  qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="45" name="RArm_UpperTwist2" qx="-0.0072" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+    </BoneOverrides>
+    <PowerArmorBoneOverrides>
+      <Bone index="1"  name="COM"             qx="-0.3428" qy="-0.6184" qz="0.3428"  qw="0.6184" />
+      <Bone index="3"  name="LLeg_Thigh"      qx="0.0594"  qy="0.6961"  qz="0.7154"  qw="-0.0121" />
+      <Bone index="4"  name="LLeg_Calf"       qx="0.0010"  qy="0.1350"  qz="0.0035"  qw="0.9908"  />
+      <Bone index="5"  name="LLeg_Foot"       qx="0.6304"  qy="-0.1257" qz="0.1002"  qw="0.7594"  />
+      <Bone index="6"  name="RLeg_Thigh"      qx="0.1088"  qy="0.7165"  qz="-0.6885" qw="-0.0283" />
+      <Bone index="7"  name="RLeg_Calf"       qx="-0.0017" qy="-0.1850" qz="0.0028"  qw="0.9827"  />
+      <Bone index="8"  name="RLeg_Foot"       qx="-0.6259" qy="0.0777"  qz="0.0487"  qw="0.7745"  />
+      <Bone index="9"  name="Spine1"          qx="0.0021"  qy="-0.0073" qz="0.0245"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"          qx="-0.0242" qy="0.0024"  qz="0.0250"  qw="0.9994"  />
+      <Bone index="11" name="Chest"           qx="0.0180"  qy="-0.0083" qz="0.0250"  qw="0.9995"  />
+      <Bone index="12" name="Neck"            qx="0.0380"  qy="-0.0086" qz="-0.1300" qw="0.9907"  />
+      <Bone index="13" name="Head"            qx="-0.0225" qy="0.0083"  qz="-0.3800" qw="0.9247"  />
+      <Bone index="15" name="LArm_UpperArm"   qx="0.1793"  qy="-0.3226" qz="-0.0750" qw="0.9263"  />
+      <Bone index="16" name="LArm_ForeArm1"   qx="0.0045"  qy="-0.0449" qz="0.0550"  qw="0.9975"  />
+      <Bone index="21" name="RArm_UpperArm"   qx="-0.1126" qy="0.3333"  qz="-0.0750" qw="0.9331"  />
+      <Bone index="22" name="RArm_ForeArm1"   qx="-0.0028" qy="0.0463"  qz="0.0550"  qw="0.9974"  />
+    </PowerArmorBoneOverrides>
+  </AnimationProfile>
+
+  <!-- ===================================================================== -->
+  <!-- 4. VUELO SUPERSÓNICO / SPRINT AÉREO (FLIGHT FORWARD SPRINT)           -->
+  <!-- Máxima inclinación horizontal (70°–76°), piernas totalmente           -->
+  <!-- alineadas con la estela y brazos plegados a los costados.             -->
+  <!-- ===================================================================== -->
+  <AnimationProfile id="FlightForwardSprint"
+                    archetypeFolder="AeroFlight"
+                    stripFootstepSounds="true"
+                    comElevationZ_Human="86.5"
+                    comElevationZ_PA="113.5"
+                    comBobAmplitudeZ="0.0"
+                    poseOscillationDeg="0.0">
+    <TargetFiles>
+      <File name="SprintForward.hkx" />
+      <File name="SprintLeanLeft.hkx" />
+      <File name="SprintLeanRight.hkx" />
+      <File name="SprintPainTrain.hkx" powerArmorOnly="true" />
+      <File name="WPNSprint.hkx" legsOnly="true" />
+    </TargetFiles>
+    <BoneOverrides>
+      <Bone index="1"  name="COM"              qx="-0.4056" qy="-0.5792" qz="0.4056"  qw="0.5792" />
+      <Bone index="3"  name="LLeg_Thigh"       qx="-0.0615" qy="0.9852"  qz="0.1490"  qw="-0.0582" />
+      <Bone index="4"  name="LLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.0785" qw="0.9969"  />
+      <Bone index="5"  name="LLeg_Foot"        qx="0.0000"  qy="-0.0500" qz="0.2200"  qw="0.9742"  />
+      <Bone index="6"  name="RLeg_Thigh"       qx="-0.0060" qy="0.9875"  qz="-0.1462" qw="0.0586"  />
+      <Bone index="7"  name="RLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1045" qw="0.9945"  />
+      <Bone index="8"  name="RLeg_Foot"        qx="0.0000"  qy="0.0500"  qz="0.2200"  qw="0.9742"  />
+      <Bone index="9"  name="Spine1"           qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"           qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="11" name="Chest"            qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="12" name="Neck"             qx="0.0000"  qy="0.0000"  qz="-0.1736" qw="0.9848"  />
+      <Bone index="13" name="Head"             qx="0.0000"  qy="0.0000"  qz="-0.4067" qw="0.9135"  />
+      <Bone index="14" name="LArm_Collarbone"  qx="-0.1078" qy="0.8364"  qz="0.1402"  qw="-0.5188" />
+      <Bone index="15" name="LArm_UpperArm"    qx="0.1564"  qy="-0.3599" qz="-0.0210" qw="0.9195"  />
+      <Bone index="16" name="LArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="17" name="LArm_ForeArm2"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="18" name="LArm_ForeArm3"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="19" name="LArm_Hand"        qx="-0.7032" qy="-0.0665" qz="-0.0369" qw="0.7069"  />
+      <Bone index="20" name="RArm_Collarbone"  qx="-0.0501" qy="0.8460"  qz="-0.1022" qw="0.5209"  />
+      <Bone index="21" name="RArm_UpperArm"    qx="-0.1957" qy="0.3599"  qz="-0.0482" qw="0.9109"  />
+      <Bone index="22" name="RArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="23" name="RArm_ForeArm2"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="24" name="RArm_ForeArm3"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="26" name="RArm_Hand"        qx="0.7032"  qy="0.0665"  qz="-0.0369" qw="0.7069"  />
+      <Bone index="42" name="LArm_UpperTwist1" qx="-0.0143" qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="43" name="LArm_UpperTwist2" qx="0.0071"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="44" name="RArm_UpperTwist1" qx="0.0143"  qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="45" name="RArm_UpperTwist2" qx="-0.0072" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+    </BoneOverrides>
+    <PowerArmorBoneOverrides>
+      <Bone index="1"  name="COM"             qx="-0.4056" qy="-0.5792" qz="0.4056"  qw="0.5792" />
+      <Bone index="3"  name="LLeg_Thigh"      qx="0.0594"  qy="0.6961"  qz="0.7154"  qw="-0.0121" />
+      <Bone index="4"  name="LLeg_Calf"       qx="0.0010"  qy="0.0950"  qz="0.0035"  qw="0.9955"  />
+      <Bone index="5"  name="LLeg_Foot"       qx="0.6304"  qy="-0.1257" qz="0.1002"  qw="0.7594"  />
+      <Bone index="6"  name="RLeg_Thigh"      qx="0.1088"  qy="0.7165"  qz="-0.6885" qw="-0.0283" />
+      <Bone index="7"  name="RLeg_Calf"       qx="-0.0017" qy="-0.1350" qz="0.0028"  qw="0.9908"  />
+      <Bone index="8"  name="RLeg_Foot"       qx="-0.6259" qy="0.0777"  qz="0.0487"  qw="0.7745"  />
+      <Bone index="9"  name="Spine1"          qx="0.0021"  qy="-0.0073" qz="0.0245"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"          qx="-0.0242" qy="0.0024"  qz="0.0250"  qw="0.9994"  />
+      <Bone index="11" name="Chest"           qx="0.0180"  qy="-0.0083" qz="0.0250"  qw="0.9995"  />
+      <Bone index="12" name="Neck"            qx="0.0380"  qy="-0.0086" qz="-0.1750" qw="0.9838"  />
+      <Bone index="13" name="Head"            qx="-0.0225" qy="0.0083"  qz="-0.4350" qw="0.9001"  />
+      <Bone index="15" name="LArm_UpperArm"   qx="0.1793"  qy="-0.3226" qz="-0.1050" qw="0.9234"  />
+      <Bone index="16" name="LArm_ForeArm1"   qx="0.0045"  qy="-0.0449" qz="0.0350"  qw="0.9984"  />
+      <Bone index="21" name="RArm_UpperArm"   qx="-0.1126" qy="0.3333"  qz="-0.1050" qw="0.9301"  />
+      <Bone index="22" name="RArm_ForeArm1"   qx="-0.0028" qy="0.0463"  qz="0.0350"  qw="0.9983"  />
+    </PowerArmorBoneOverrides>
+  </AnimationProfile>
+
+  <!-- ===================================================================== -->
+  <!-- 5. DESCENSO CONTROLADO / FRENADO AÉREO (FLIGHT DESCEND)               -->
+  <!-- Usado durante el descenso en el aire (AeroDescent): reemplaza solo    -->
+  <!-- las animaciones de caída en el aire (Jump*Fall / Jump*) manteniendo   -->
+  <!-- intactas las animaciones nativas de aterrizaje (Jump*Land) y          -->
+  <!-- locomoción en tierra para que al tocar el suelo el jugador pueda      -->
+  <!-- caminar o correr hacia adelante inmediatamente sin bloqueo.           -->
+  <!-- ===================================================================== -->
+  <AnimationProfile id="FlightDescend"
+                    archetypeFolder="AeroDescent"
+                    stripFootstepSounds="true"
+                    comElevationZ_Human="75.5"
+                    comElevationZ_PA="102.5"
+                    comBobAmplitudeZ="0.8"
+                    poseOscillationDeg="2.0">
+    <TargetFiles>
+      <File name="PoseA_Idle1.hkx" />
+      <File name="PoseA_IdleFlavor2.hkx" />
+      <File name="Idle.hkx" powerArmorOnly="true" />
+      <File name="ThrustStart.hkx" powerArmorOnly="true" />
+      <File name="ThrustIdle.hkx" powerArmorOnly="true" />
+      <File name="UpwardDrift.hkx" powerArmorOnly="true" />
+      <File name="JumpInPlace.hkx" />
+      <File name="JumpInPlaceFall.hkx" />
+      <File name="JumpRun.hkx" />
+      <File name="JumpRunFall.hkx" />
+      <File name="JumpWalk.hkx" />
+      <File name="JumpWalkFall.hkx" />
+      <File name="WPNIdleReady.hkx" legsOnly="true" />
+      <File name="WPNJumpInPlace.hkx" legsOnly="true" />
+      <File name="WPNJumpInPlaceFall.hkx" legsOnly="true" />
+      <File name="WPNJumpRun.hkx" legsOnly="true" />
+      <File name="WPNJumpRunFall.hkx" legsOnly="true" />
+    </TargetFiles>
+    <BoneOverrides>
+      <Bone index="1"  name="COM"              qx="-0.0247" qy="-0.7067" qz="0.0247"  qw="0.7067" />
+      <Bone index="3"  name="LLeg_Thigh"       qx="0.0763"  qy="0.9842"  qz="0.1395"  qw="-0.0784" osc_rz_deg="2.0" />
+      <Bone index="4"  name="LLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.1908" qw="0.9816"  osc_rz_deg="2.8" />
+      <Bone index="5"  name="LLeg_Foot"        qx="0.0000"  qy="-0.0500" qz="0.2200"  qw="0.9742"  />
+      <Bone index="6"  name="RLeg_Thigh"       qx="0.1315"  qy="0.9787"  qz="-0.1366" qw="0.0783"  osc_rz_deg="-2.0" />
+      <Bone index="7"  name="RLeg_Calf"        qx="0.0000"  qy="0.0000"  qz="-0.2419" qw="0.9703"  osc_rz_deg="-2.8" />
+      <Bone index="8"  name="RLeg_Foot"        qx="0.0000"  qy="0.0500"  qz="0.2200"  qw="0.9742"  />
+      <Bone index="9"  name="Spine1"           qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"           qx="0.0000"  qy="0.0000"  qz="0.0175"  qw="0.9998"  />
+      <Bone index="11" name="Chest"            qx="0.0000"  qy="0.0000"  qz="0.0262"  qw="0.9997"  />
+      <Bone index="12" name="Neck"             qx="0.0000"  qy="0.0000"  qz="0.0698"  qw="0.9976"  />
+      <Bone index="13" name="Head"             qx="0.0000"  qy="0.0000"  qz="-0.1045" qw="0.9945"  />
+      <Bone index="14" name="LArm_Collarbone"  qx="-0.1078" qy="0.8364"  qz="0.1402"  qw="-0.5188" />
+      <Bone index="15" name="LArm_UpperArm"    qx="0.0612"  qy="-0.3173" qz="0.1438"  qw="0.9353"  osc_rz_deg="2.5" />
+      <Bone index="16" name="LArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.1564"  qw="0.9877"  />
+      <Bone index="17" name="LArm_ForeArm2"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="18" name="LArm_ForeArm3"    qx="0.0027"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="19" name="LArm_Hand"        qx="-0.7032" qy="-0.0665" qz="-0.0369" qw="0.7069"  />
+      <Bone index="20" name="RArm_Collarbone"  qx="-0.0501" qy="0.8460"  qz="-0.1022" qw="0.5209"  />
+      <Bone index="21" name="RArm_UpperArm"    qx="-0.1018" qy="0.3241"  qz="0.1182"  qw="0.9330"  osc_rz_deg="-2.5" />
+      <Bone index="22" name="RArm_ForeArm1"    qx="0.0000"  qy="0.0000"  qz="0.1564"  qw="0.9877"  />
+      <Bone index="23" name="RArm_ForeArm2"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="24" name="RArm_ForeArm3"    qx="-0.0027" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="26" name="RArm_Hand"        qx="0.7032"  qy="0.0665"  qz="-0.0369" qw="0.7069"  />
+      <Bone index="42" name="LArm_UpperTwist1" qx="-0.0143" qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="43" name="LArm_UpperTwist2" qx="0.0071"  qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+      <Bone index="44" name="RArm_UpperTwist1" qx="0.0143"  qy="0.0000"  qz="0.0000"  qw="0.9999"  />
+      <Bone index="45" name="RArm_UpperTwist2" qx="-0.0072" qy="0.0000"  qz="0.0000"  qw="1.0000"  />
+    </BoneOverrides>
+    <PowerArmorBoneOverrides>
+      <Bone index="1"  name="COM"             qx="-0.0247" qy="-0.7067" qz="0.0247"  qw="0.7067" />
+      <Bone index="3"  name="LLeg_Thigh"      qx="0.1323"  qy="0.6263"  qz="0.7677"  qw="0.0290"  osc_rz_deg="1.5" />
+      <Bone index="4"  name="LLeg_Calf"       qx="-0.0017" qy="-0.2853" qz="-0.0059" qw="-0.9584" osc_ry_deg="2.5" />
+      <Bone index="5"  name="LLeg_Foot"       qx="-0.6615" qy="0.2228"  qz="-0.2169" qw="-0.6824" />
+      <Bone index="6"  name="RLeg_Thigh"      qx="0.1810"  qy="0.5748"  qz="-0.7972" qw="-0.0356" osc_rz_deg="-1.5" />
+      <Bone index="7"  name="RLeg_Calf"       qx="-0.0017" qy="-0.3295" qz="0.0038"  qw="0.9441"  osc_ry_deg="-2.5" />
+      <Bone index="8"  name="RLeg_Foot"       qx="-0.6802" qy="0.2791"  qz="0.2411"  qw="0.6335"  />
+      <Bone index="9"  name="Spine1"          qx="0.0021"  qy="-0.0073" qz="0.0245"  qw="0.9997"  />
+      <Bone index="10" name="Spine2"          qx="-0.0242" qy="0.0024"  qz="0.0497"  qw="0.9985"  />
+      <Bone index="11" name="Chest"           qx="0.0180"  qy="-0.0083" qz="0.0497"  qw="0.9986"  />
+      <Bone index="12" name="Neck"            qx="0.0373"  qy="-0.0079" qz="0.1554"  qw="0.9871"  />
+      <Bone index="13" name="Head"            qx="-0.0238" qy="0.0100"  qz="-0.2674" qw="0.9632"  />
+      <Bone index="15" name="LArm_UpperArm"   qx="0.1793"  qy="-0.3226" qz="0.0131"  qw="0.9293"  osc_rz_deg="2.0" />
+      <Bone index="16" name="LArm_ForeArm1"   qx="0.0045"  qy="-0.0449" qz="0.2400"  qw="0.9697"  />
+      <Bone index="21" name="RArm_UpperArm"   qx="-0.1126" qy="0.3333"  qz="0.0010"  qw="0.9361"  osc_rz_deg="-2.0" />
+      <Bone index="22" name="RArm_ForeArm1"   qx="-0.0028" qy="0.0463"  qz="0.2200"  qw="0.9744"  />
+    </PowerArmorBoneOverrides>
+  </AnimationProfile>
+
+</AeroFlightAnimations>

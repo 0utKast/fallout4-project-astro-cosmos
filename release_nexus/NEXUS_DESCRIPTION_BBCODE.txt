@@ -1,0 +1,84 @@
+[center][size=6][b]PROJECT ASTRO-COSMOS — FLY OVER THE COMMONWEALTH[/b][/size]
+[size=4][b]v1.0.0 Standalone Complete Edition (English & Spanish) • The Hubris Legacy[/b][/size]
+[size=3][i]True 3D Superhero Free Flight (8 Aerodynamic Regimes • 714 Custom 64-Bit Havok .HKX Clips) • 4 Custom 3D PBR Suits & Unobstructed Aerial Weapons • Voiced Underground Studio Orbit-7 Campaign & Permanent Player Home (197 Lip-Synced .FUZ Lines + 60 Terminal Audio Clips) • Native 1.10.163 & Next-Gen/AE Support • 0 CC / 0 DLC / 0 F4SE • 100% Open Permissions[/i][/size]
+[size=3][b]Open-Source Repository & Build Scripts:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url][/size][/center]
+
+[line]
+
+[size=5][b]🦸 WHAT IS PROJECT ASTRO-COSMOS? (ENGLISH)[/b][/size]
+[b]Project Astro-Cosmos[/b] ([font=Courier New]AeroArmorMod.esp[/font]) brings [b]true 3D superhero free flight[/b], [b]custom 3D PBR Captain Cosmos equipment[/b], and a [b]fully voiced Hubris Comics expansion[/b] to Fallout 4 — engineered from scratch with additive Havok subgraphs, zero animation conflicts, and zero external dependencies.
+
+Outside [b]Hubris Comics[/b] in downtown Boston, uncover a hidden Pre-War hatch leading into [b]Underground Studio Orbit-7[/b]. Meet voiced Hubris R&D Director [b]Dr. Arthur "Artie" Vance[/b] and [b]Colonel Gutsy "Cosmos"[/b], uncover [b]Clara Sterling's 2077 terminals and holotapes[/b], pass interactive security trivia exams, test prototype propulsion above Boston skyscrapers, ArcJet Systems, and Fort Hagen, and unlock [b]Studio Orbit-7[/b] as a permanent superhero sanctuary.
+
+[line]
+
+[size=5][b]🚀 KEY TECHNICAL & GAMEPLAY FEATURES[/b][/size]
+[list]
+[*][b]True 3D Free-Flight Engine ([font=Courier New]8[/font] Aerodynamic Regimes & [font=Courier New]714[/font] Custom Havok [font=Courier New].hkx[/font] Clips):[/b]
+• Vertical thruster liftoff, [b]stationary mid-air hover[/b] (zero-gravity stabilization + collision-safe [font=Courier New]HoverPlatform.nif[/font]), horizontal superhero cruise, supersonic sprint, controlled downward dive/descent, and instant landing transitions.
+• Smoothed 1st-person flight & shooting camera animations ([font=Courier New]Track 78[/font] stabilization) and clean [b]additive subgraph races ([font=Courier New]SADD[/font])[/b] for both Human and Power Armor skeletons — [b]zero vanilla animation overrides or third-party conflicts[/b].[/*]
+
+[*][b]4 Custom 3D PBR Suits & Unobstructed Aerial Weapons ([font=Courier New]46[/font] Meshes, [font=Courier New]31[/font] Materials, [font=Courier New]90[/font] DDS Textures):[/b]
+• [b]Astro-Cosmos Flight Suit:[/b] Custom 3D cobalt-blue suit with solar crest, articulated crimson cape, gloves, and [b]100% radiation shielding[/b].
+• [b]6-Piece Astro-Cosmos Power Armor:[/b] Full heavy chassis ([font=Courier New]Helmet, Torso, L/R Arms, L/R Legs[/font]) with twin sustained repulsion thrusters and workbench crafting/mods.
+• [b]Astro-Cosmos Ray Carbine:[/b] Custom 3D energy carbine with [b]3-Prong Atomic Crown Focuser[/b], [b]6× Observatory Aerial Scope[/b], unobstructed [b]>46° steep dive-fire[/b] over targets below you, and [b]Cosmic Photonic Pulse[/b] ([font=Courier New]+25 AP / +15 HP[/font] every 4th hit).
+• [b]Astro-Cosmos Orbital Gauss Cannon:[/b] Heavy airborne gauss railgun with [b]Quadruple Solar Rail Accelerator[/b], [b]8× Optics[/b], unobstructed PA dive-fire, and [b]Gravitational Supernova[/b] ([font=Courier New]+35 AP / +25 HP[/font] every 3rd hit).[/*]
+
+[*][b]Fully Voiced Underground Studio Orbit-7 Campaign ([font=Courier New]4[/font] Quests) & Permanent Home:[/b]
+• Features [b]197 lip-synced [font=Courier New].fuz[/font] dialogue lines[/b] across [b]Dr. Artie Vance[/b], [b]Colonel Gutsy "Cosmos"[/b], [b]Clara Sterling's 2077 holotapes[/b], and Male/Female player dialogue — plus [b]60 interactive terminal [font=Courier New].wav[/font] audio clips[/b].
+• Clearing the Hubris Legacy unlocks [b]Underground Studio Orbit-7[/b] as a permanent sanctuary beneath Boston with localized Hubris murals, golden Ringed-Planet monument dome, armor stasis pods, safe Star Chests, Space Bed (*Well Rested*), and full crafting stations.[/*]
+[/list]
+
+[line]
+
+[size=5][b]🛡️ UNIVERSAL COMPATIBILITY (1.10.163 + NEXT-GEN/AE) & OPEN MODDING POLICY[/b][/size]
+[list]
+[*][b]Works Natively on BOTH Fallout 4 [font=Courier New]1.10.163[/font] (Pre-Next-Gen / GOG) AND [font=Courier New]1.10.980+[/font] (Next-Gen / AE):[/b]
+• Compiled cleanly with [b][font=Courier New]HEDR v1.00[/font][/b] ([font=Courier New]FormIDs >= 0x01000800[/font]) and packed strictly as [b][font=Courier New]BTDX Version 1[/font][/b] BA2 archives ([font=Courier New]GNRL v1[/font] & [font=Courier New]DX10 v1[/font] — verified with Bethesda's official [font=Courier New]Archive2.exe[/font]). Zero backport patchers needed on [font=Courier New]1.10.163[/font].[/*]
+[*][b]Zero Creation Club, Zero DLCs, Zero F4SE & Zero External Dependencies:[/b]
+• Requires strictly base [font=Courier New]Fallout4.esm[/font] only. [b]0 Creation Club content[/b], [b]0 DLCs[/b], [b]0 F4SE/DLLs[/b].[/*]
+[*][b]100% Free & Open Permissions Forever (MIT License):[/b]
+• We reject paid modding locks and walled ecosystems. Full source code, 3D asset scripts, Havok compiler, and archives are open-source on [url=https://github.com/0utKast/fallout4-project-astro-cosmos]GitHub[/url] under [b]100% Open Permissions[/b] — inspect, modify, translate, and redistribute freely with attribution.[/*]
+[/list]
+
+[line]
+
+[size=5][b]🛠️ INSTALLATION & HOW TO START (ENGLISH)[/b][/size]
+[list=1]
+[*]In the [b]Files[/b] tab, download [b]EITHER[/b] [font=Courier New]Project Astro-Cosmos - English Edition[/font] ([font=Courier New]146.54 MB[/font]) [b]OR[/b] [font=Courier New]Proyecto Astro-Cosmos - Spanish Edition[/font] ([font=Courier New]157.63 MB[/font]). Each archive is 100% standalone.[/*]
+[*]Install via [b]Vortex[/b] or [b]Mod Organizer 2[/b] (or extract [font=Courier New]AeroArmorMod.esp[/font], [font=Courier New]AeroArmorMod - Main.ba2[/font], and [font=Courier New]AeroArmorMod - Textures.ba2[/font] into [font=Courier New]Fallout 4\Data[/font]) and enable [font=Courier New]AeroArmorMod.esp[/font].[/*]
+[*]Go to [b]Hubris Comics[/b] in downtown Boston and activate the secret hatch outside the entrance to enter [b]Underground Studio Orbit-7[/b].[/*]
+[/list]
+
+[line]
+
+[center][size=6][b]🇪🇸 EDICIÓN COMPLETA EN ESPAÑOL — PROYECTO ASTRO-COSMOS[/b][/size]
+[size=4][b]v1.0.0 Autónoma (El Legado de Hubris: Vuelo Libre 3D Real, Arsenal PBR y Estudio Órbita-7)[/b][/size][/center]
+
+[size=5][b]🌟 CARACTERÍSTICAS PRINCIPALES (ESPAÑOL)[/b][/size]
+[list]
+[*][b]Motor de Vuelo Libre 3D Real ([font=Courier New]8[/font] Regímenes Aerodinámicos y [font=Courier New]714[/font] Clips Havok [font=Courier New].hkx[/font]):[/b]
+• Despegue vertical con propulsores, flotación estacionaria en pleno aire, vuelo horizontal de superhéroe, sprint supersónico, descenso/picado controlado y aterrizaje instantáneo. Suavizado de cámara en 1.ª persona ([font=Courier New]Track 78[/font]) e inyección por subgrafos aditivos ([font=Courier New]SADD[/font]) en Humano y Servoarmadura [b]sin conflictos con otros mods[/b].[/*]
+[*][b]4 Equipos y Armas 3D PBR Propios ([font=Courier New]46[/font] Mallas [font=Courier New].nif[/font], [font=Courier New]31[/font] Materiales y [font=Courier New]90[/font] Texturas [font=Courier New].dds[/font]):[/b]
+• [b]Traje de Vuelo Astro-Cosmos[/b] (100% protección frente a radiación, capa carmesí y guantes), [b]Servoarmadura Astro-Cosmos de 6 piezas[/b] (propulsores gemelos), [b]Carabina de Rayos Astro-Cosmos[/b] (mira aérea 6×, disparo en picado >46° sin bloqueo y Pulso Fotónico Cósmico: +25 PA / +15 Salud) y [b]Cañón Gauss Orbital Astro-Cosmos[/b] (óptica 8×, acelerador solar cuádruple y Supernova Gravitatoria: +35 PA / +25 Salud).[/*]
+[*][b]Campaña Totalmente Doblada al Español ([font=Courier New]4[/font] Misiones) y Hogar Permanente:[/b]
+• [b]197 diálogos [font=Courier New].fuz[/font] con sincronización labial en español[/b] (Dr. Artie Vance, Coronel Agallas «Cosmos», holocintas 2077 de Clara Sterling y protagonista) + [b]60 locuciones de terminal [font=Courier New].wav[/font][/b] + texturas en español dentro del Estudio Subterráneo Órbita-7.[/*]
+[*][b]Compatibilidad Universal ([font=Courier New]1.10.163[/font] + Next-Gen/AE) y Permisos 100% Abiertos:[/b]
+• Requiere únicamente [b][font=Courier New]Fallout4.esm[/font][/b] (0 Creation Club, 0 DLCs, 0 F4SE). Compilado en [font=Courier New]HEDR v1.00[/font] y archivos [font=Courier New]BA2 v1[/font] verificados con [font=Courier New]Archive2.exe[/font]. Código fuente y activos libres bajo licencia MIT / Permisos 100% Abiertos.[/*]
+[/list]
+
+[size=5][b]🛠️ INSTALACIÓN (ESPAÑOL)[/b][/size]
+[list=1]
+[*]En la pestaña [b]Files[/b], descarga [font=Courier New]Proyecto Astro-Cosmos - Spanish Edition[/font] (100% autónoma en español).[/*]
+[*]Instálalo con [b]Vortex[/b] o [b]Mod Organizer 2[/b] (o extrae [font=Courier New]AeroArmorMod.esp[/font], [font=Courier New]AeroArmorMod - Main.ba2[/font] y [font=Courier New]AeroArmorMod - Textures.ba2[/font] en [font=Courier New]Fallout 4\Data[/font]) y activa [font=Courier New]AeroArmorMod.esp[/font].[/*]
+[*]Acércate a [b]Hubris Comics[/b] en el centro de Boston y baja por la escotilla secreta frente a la entrada para iniciar la aventura en el [b]Estudio Subterráneo Órbita-7[/b].[/*]
+[/list]
+
+[line]
+
+[size=5][b]⚖️ CREDITS & OPEN PERMISSIONS[/b][/size]
+[list]
+[*][b]Flight Engine, 3D PBR Assets, 714 Havok Clips, Quests & Papyrus Scripts:[/b] [b]0utKast[/b] ([url=https://github.com/0utKast/fallout4-project-astro-cosmos]GitHub Source Repository[/url] — MIT License & 100% Open Permissions).[/*]
+[*][b]Base Engine & Captain Cosmos Lore:[/b] Bethesda Game Studios ([font=Courier New]Fallout4.esm[/font] — Zero Creation Club / Zero DLC content used).[/*]
+[*][b]Voice Acting Synthesis:[/b] Synthesized by 0utKast across distinct character voice profiles & radio filters in both English and Spanish.[/*]
+[/list]
