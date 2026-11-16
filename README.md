@@ -2,6 +2,7 @@
 ### *Fly Over the Commonwealth (The Hubris Legacy)* — True 3D Superhero Free Flight (`8` Regimes, `714` Havok `.hkx`), Custom 3D PBR Suits & Airborne Arsenal, and *Underground Studio Orbit-7* Voiced Campaign (English & Spanish Standalone Editions)
 
 [![License: MIT & Open Permissions](https://img.shields.io/badge/License-MIT%20%28100%25%20Open%20Permissions%29-brightgreen.svg)](LICENSE)
+[![Official Trailer](https://img.shields.io/badge/YouTube-Official%20Trailer-ff0000.svg)](https://youtu.be/uGDSPndAUIA)
 [![Release v1.0.0](https://img.shields.io/badge/Release-v1.0.0%20Complete%20%28EN%20%26%20ES%29-success.svg)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)
 [![Fallout 4 Compatibility](https://img.shields.io/badge/Fallout%204-1.10.163%20%2B%20Next--Gen%2FAE%20%28HEDR%201.00%20%2F%20BA2%20v1%29-blue.svg)](#universal-compatibility)
 [![Zero Dependencies](https://img.shields.io/badge/Requirements-Base%20Fallout4.esm%20Only%20%280%20CC%20%2F%200%20DLC%20%2F%200%20F4SE%29-orange.svg)](#universal-compatibility)
@@ -10,6 +11,7 @@
 ![Project Astro-Cosmos Header Banner](media/00_HEADER_NEXUS_1920x1080_EN.jpg)
 
 > **🌍 Language Navigation & Direct Downloads / Navegación y Descarga Directa:**
+> - 🎬 **[Watch Official Trailer on YouTube / Ver Tráiler Oficial en YouTube (`youtu.be/uGDSPndAUIA`)](https://youtu.be/uGDSPndAUIA)**
 > - 📦 **[Download Complete Playable `.zip` Releases (`v1.0.0` — EN & ES)](https://github.com/0utKast/fallout4-project-astro-cosmos/releases)**
 >   - 🇺🇸 `ProjectAstroCosmos_EN_v1.0.0.zip` *(146.54 MB — 100% Pure English Standalone Edition for Vortex / MO2 / Manual)*
 >   - 🇪🇸 `ProyectoAstroCosmos_ES_v1.0.0.zip` *(157.63 MB — Edición 100% en Español para Vortex / MO2 / Manual)*

@@ -1,7 +1,9 @@
 [center][size=6][b]PROJECT ASTRO-COSMOS — FLY OVER THE COMMONWEALTH[/b][/size]
 [size=4][b]v1.0.0 Standalone Complete Edition (English & Spanish) • The Hubris Legacy[/b][/size]
 [size=3][i]True 3D Superhero Free Flight (8 Aerodynamic Regimes • 714 Custom 64-Bit Havok .HKX Clips) • 4 Custom 3D PBR Suits & Unobstructed Aerial Weapons • Voiced Underground Studio Orbit-7 Campaign & Permanent Player Home (197 Lip-Synced .FUZ Lines + 60 Terminal Audio Clips) • Native 1.10.163 & Next-Gen/AE Support • 0 CC / 0 DLC / 0 F4SE • 100% Open Permissions[/i][/size]
-[size=3][b]Open-Source Repository & Build Scripts:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url][/size][/center]
+[size=3][b]Official Trailer:[/b] [url=https://youtu.be/uGDSPndAUIA]youtu.be/uGDSPndAUIA[/url]  •  [b]Open-Source Repository & Build Scripts:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url][/size]
+
+[youtube]uGDSPndAUIA[/youtube][/center]
 
 [line]
 
@@ -53,7 +55,8 @@ Outside [b]Hubris Comics[/b] in downtown Boston, uncover a hidden Pre-War hatch 
 [line]
 
 [center][size=6][b]🇪🇸 EDICIÓN COMPLETA EN ESPAÑOL — PROYECTO ASTRO-COSMOS[/b][/size]
-[size=4][b]v1.0.0 Autónoma (El Legado de Hubris: Vuelo Libre 3D Real, Arsenal PBR y Estudio Órbita-7)[/b][/size][/center]
+[size=4][b]v1.0.0 Autónoma (El Legado de Hubris: Vuelo Libre 3D Real, Arsenal PBR y Estudio Órbita-7)[/b][/size]
+[size=3][b]Tráiler Oficial:[/b] [url=https://youtu.be/uGDSPndAUIA]youtu.be/uGDSPndAUIA[/url]  •  [b]Repositorio Abierto:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url][/size][/center]
 
 [size=5][b]🌟 CARACTERÍSTICAS PRINCIPALES (ESPAÑOL)[/b][/size]
 [list]
