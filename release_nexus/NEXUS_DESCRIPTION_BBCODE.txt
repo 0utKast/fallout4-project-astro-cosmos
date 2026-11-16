@@ -1,9 +1,18 @@
 [center][size=6][b]PROJECT ASTRO-COSMOS — FLY OVER THE COMMONWEALTH[/b][/size]
 [size=4][b]v1.0.0 Standalone Complete Edition (English & Spanish) • The Hubris Legacy[/b][/size]
 [size=3][i]True 3D Superhero Free Flight (8 Aerodynamic Regimes • 714 Custom 64-Bit Havok .HKX Clips) • 4 Custom 3D PBR Suits & Unobstructed Aerial Weapons • Voiced Underground Studio Orbit-7 Campaign & Permanent Player Home (197 Lip-Synced .FUZ Lines + 60 Terminal Audio Clips) • Native 1.10.163 & Next-Gen/AE Support • 0 CC / 0 DLC / 0 F4SE • 100% Open Permissions[/i][/size]
-[size=3][b]Official Trailer:[/b] [url=https://youtu.be/uGDSPndAUIA]youtu.be/uGDSPndAUIA[/url]  •  [b]Open-Source Repository & Build Scripts:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url][/size]
+[size=3][b]Official Trailer:[/b] [url=https://youtu.be/uGDSPndAUIA]youtu.be/uGDSPndAUIA[/url]  •  [b]Open-Source Repository & Build Scripts:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url]
+[b]Full 90-Min Modding Engineering Course (Learn How This Mod Was Built):[/b] [url=https://0utkast.github.io/fallout-modding-course/]14 Interactive Labs[/url]  •  [url=https://github.com/0utKast/fallout-modding-course]Course GitHub[/url]  •  [url=https://www.youtube.com/watch?v=_qSFQ8TPaao]ES 4K Video[/url][COURSE_EN_EXTRA_LINKS][/size]
 
 [youtube]uGDSPndAUIA[/youtube][/center]
+
+[quote][color=#66d9ff][b]🎓 LEARN HOW THIS MOD WAS BUILT FROM SCRATCH (FREE ENGINEERING COURSE):[/b][/color]
+Want to learn step-by-step how we engineered [b]Project Astro-Cosmos[/b]'s true 3D free flight (8 aerodynamic regimes, 40 Hz physics, 714 Havok [font=Courier New].hkx[/font] animations), custom 3D Blender/PBR meshes, Papyrus state machines, lip-synced [font=Courier New].fuz[/font] quests, and universal [font=Courier New]HEDR v1.00 / BA2 v1[/font] builds from byte zero?
+[list]
+[*][b]14 Live Interactive Web Simulators (EN & ES):[/b] [url=https://0utkast.github.io/fallout-modding-course/]0utkast.github.io/fallout-modding-course[/url][/*]
+[*][b]PDF Handouts, Python Binary Builders & Demo Plugins:[/b] [url=https://github.com/0utKast/fallout-modding-course]github.com/0utKast/fallout-modding-course[/url][COURSE_NEXUS_BULLET][COURSE_EN_VIDEO_BULLET][/*]
+[*][b]Complete 4K Course Video in Spanish (01:49:45):[/b] [url=https://www.youtube.com/watch?v=_qSFQ8TPaao]youtube.com/watch?v=_qSFQ8TPaao[/url][/*]
+[/list][/quote]
 
 [line]
 
@@ -56,7 +65,14 @@ Outside [b]Hubris Comics[/b] in downtown Boston, uncover a hidden Pre-War hatch 
 
 [center][size=6][b]🇪🇸 EDICIÓN COMPLETA EN ESPAÑOL — PROYECTO ASTRO-COSMOS[/b][/size]
 [size=4][b]v1.0.0 Autónoma (El Legado de Hubris: Vuelo Libre 3D Real, Arsenal PBR y Estudio Órbita-7)[/b][/size]
-[size=3][b]Tráiler Oficial:[/b] [url=https://youtu.be/uGDSPndAUIA]youtu.be/uGDSPndAUIA[/url]  •  [b]Repositorio Abierto:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url][/size][/center]
+[size=3][b]Tráiler Oficial:[/b] [url=https://youtu.be/uGDSPndAUIA]youtu.be/uGDSPndAUIA[/url]  •  [b]Repositorio Abierto:[/b] [url=https://github.com/0utKast/fallout4-project-astro-cosmos]github.com/0utKast/fallout4-project-astro-cosmos[/url]  •  [b]Curso Completo en Vídeo 4K (ES):[/b] [url=https://www.youtube.com/watch?v=_qSFQ8TPaao]youtube.com/watch?v=_qSFQ8TPaao[/url][/size][/center]
+
+[quote][color=#66d9ff][b]🎓 APRENDE CÓMO SE CONSTRUYÓ ESTE MOD PASO A PASO — CURSO GRATUITO (01:49:45 EN 4K):[/b][/color]
+En nuestro curso gratuito de 7 capítulos diseccionamos línea a línea la ingeniería real de [b]Proyecto Astro-Cosmos[/b] (vuelo libre 3D de 8 regímenes, códec Havok .hkx, registros binarios ESP, máquinas de estados Papyrus, doblaje .fuz y tubería Blender 5.2 + PBR/BA2 v1):
+[list]
+[*][b]Ver Curso Completo en Español (YouTube 4K):[/b] [url=https://www.youtube.com/watch?v=_qSFQ8TPaao]youtube.com/watch?v=_qSFQ8TPaao[/url][/*]
+[*][b]14 Laboratorios Web Interactivos + PDFs + Constructores Python:[/b] [url=https://0utkast.github.io/fallout-modding-course/]0utkast.github.io/fallout-modding-course[/url]  •  [url=https://github.com/0utKast/fallout-modding-course]GitHub[/url][COURSE_NEXUS_BULLET_ES][/*]
+[/list][/quote]
 
 [size=5][b]🌟 CARACTERÍSTICAS PRINCIPALES (ESPAÑOL)[/b][/size]
 [list]
